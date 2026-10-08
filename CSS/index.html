@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning CSS</title>
     <style>
-      body {
+      * {
         background-color: pink;
       }
       /* element selector */
       p {
-        color: rgb(181, 97, 159);
+        color: whitesmoke;
         /* border: 2px solid rgb(239, 34, 185); */
       }
       .box {
-        width: 500px;
+        width: 1450px;
         height: 100px;
-        border: 2px solid rgb(239, 34, 185);
-        padding: 30px 150px;
+        border: 10px groove rgb(239, 34, 185);
+        padding: 19px 600px;
         color: rgb(232, 120, 247);
         box-sizing: border-box;
       }
@@ -29,10 +29,16 @@
       #intro {
         color: purple;
       }
+      div + p {
+        color: rgb(246, 8, 158);
+      }
+      div > p {
+        color: rgb(249, 133, 183);
+      }
     </style>
   </head>
   <body>
-    <h1 class="box" class="note">Learning CSS</h1>
+    <h1 class="box">Learning CSS</h1>
     <p id="intro" class="note">Hello CSS!</p>
     <p style="color: blue">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate
@@ -48,8 +54,18 @@
       deleniti corporis aliquam, voluptatibus voluptas reprehenderit rem in
       similique ipsa blanditiis sequi corrupti, explicabo vitae delectus.
     </p>
-    <p id="intro">
+    <p class="note">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate
     </p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta architecto veniam vitae laboriosam. Dolor, tempore natus saepe laborum a, reprehenderit magnam aliquid, adipisci iste dolores dolore velit quod asperiores.</p>
+        <div>
+            <p>
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta architecto veniam vitae laboriosam. Dolor, tempore natus saepe laborum a, reprehenderit magnam aliquid, adipisci iste dolores dolore velit quod asperiores.
+            </p>
+            <strong><p>Hello Ji!</p></strong>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, aperiam nulla? Explicabo modi excepturi aliquam! Soluta porro at animi dolor consequatur incidunt earum, aliquam, nemo rem sequi ratione similique ducimus.</p>
   </body>
 </html>
