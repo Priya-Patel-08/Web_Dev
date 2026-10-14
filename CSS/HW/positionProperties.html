@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: aliceblue;
+            position: fixed;
+        }
+        div {
+            font-family: "Alfa Slab One", sans-serif;
+            font-size: 20px;
+        }
+        #top-left {
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            
+        }
+        #top-centre {
+            position: absolute;
+            width: 100%;
+            top: 2px;
+            text-align: center;
+        }
+        #top-right {
+            position: absolute;
+            top: 2px;
+            right: 10px;
+        }
+        #centre-left {
+            position: absolute;
+            top: 46%;
+            left: 5px;
+        }
+        #centred {
+            position: absolute;
+            top: 46%;
+            width: 100%;
+            text-align: center;
+        }
+        #centre-right {
+            position: absolute;
+            top: 46%;
+            right: 10px;
+        }
+        #bottom-left {
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+        }
+        #bottom-centre {
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            text-align: center;
+        }
+        #bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="Image.jpeg" alt="Image" width="1000" height="825">
+    <div id="top-left">Priya Patel</div>
+    <div id="top-centre">Priya Patel</div>
+    <div id="top-right">Priya Patel</div>
+    <div id="centre-left">Priya Patel</div>
+    <div id="centred">Priya Patel</div>
+    <div id="centre-right">Priya Patel</div>
+    <div id="bottom-left">Priya Patel</div>
+    <div id="bottom-centre">Priya Patel</div>
+    <div id="bottom-right">Priya Patel</div>
+</body>
+</html>
