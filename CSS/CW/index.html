@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <style>
+      * {
+        background-color: pink;
+      }
+      /* element selector */
+      p {
+        color: whitesmoke;
+        /* border: 2px solid rgb(239, 34, 185); */
+      }
+      .box {
+        width: 1450px;
+        height: 100px;
+        border: 10px groove rgb(239, 34, 185);
+        padding: 19px 600px;
+        color: rgb(232, 120, 247);
+        box-sizing: border-box;
+      }
+      /* class selector */
+      .note {
+        color: rgb(232, 120, 247);
+      }
+      /* id selector */
+      #intro {
+        color: purple;
+      }
+      div + p {
+        color: rgb(246, 8, 158);
+      }
+      div > p {
+        color: rgb(249, 133, 183);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="box">Learning CSS</h1>
+    <p id="intro" class="note">Hello CSS!</p>
+    <p style="color: blue">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate
+      quo neque deleniti vitae amet fuga cum alias minus architecto impedit sunt
+      nobis, ad id laborum autem harum molestias debitis sint animi vero? Iure
+      deleniti corporis aliquam, voluptatibus voluptas reprehenderit rem in
+      similique ipsa blanditiis sequi corrupti, explicabo vitae delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate
+      quo neque deleniti vitae amet fuga cum alias minus architecto impedit sunt
+      nobis, ad id laborum autem harum molestias debitis sint animi vero? Iure
+      deleniti corporis aliquam, voluptatibus voluptas reprehenderit rem in
+      similique ipsa blanditiis sequi corrupti, explicabo vitae delectus.
+    </p>
+    <p class="note">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate
+    </p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta architecto veniam vitae laboriosam. Dolor, tempore natus saepe laborum a, reprehenderit magnam aliquid, adipisci iste dolores dolore velit quod asperiores.</p>
+        <div>
+            <p>
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta architecto veniam vitae laboriosam. Dolor, tempore natus saepe laborum a, reprehenderit magnam aliquid, adipisci iste dolores dolore velit quod asperiores.
+            </p>
+            <strong><p>Hello Ji!</p></strong>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, aperiam nulla? Explicabo modi excepturi aliquam! Soluta porro at animi dolor consequatur incidunt earum, aliquam, nemo rem sequi ratione similique ducimus.</p>
+  </body>
+</html>
