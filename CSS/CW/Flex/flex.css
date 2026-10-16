@@ -1,0 +1,11 @@
+span {
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+}
+.container {
+    background-color: blue;
+    display:flex;
+    gap: 20px;
+}
