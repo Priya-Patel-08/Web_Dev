@@ -9,3 +9,9 @@ span {
     display:flex;
     gap: 20px;
 }
+.container2 {
+    background-color: blue;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
