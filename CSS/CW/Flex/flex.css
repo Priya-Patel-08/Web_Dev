@@ -28,7 +28,6 @@ span {
 .container4 {
     background-color: blue;
     padding: 50px;
-    width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,7 +35,27 @@ span {
 .container4 span {
     background-color: yellow;
     padding: 20px;
-    width: 400px;
+    width: 550px;
     margin: 10px;
     font-size: 25px;
+}
+.container5 {
+    background-color: purple;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.container5 span{
+    background-color: orange;
+}
+.container6 {
+    background-color: purple;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container6 span {
+    background-color: orange;
 }
