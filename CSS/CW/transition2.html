@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transition+Transform</title>
     <style>
-      div {
-        width: 100px;
-        height: 100px;
+      #div1 {
+        width: 200px;
+        height: 200px;
+        text-align: center;
         background-color: red;
         transition:
-          width 2s,
-          height 2s,
-          background-color 2s,
+          width 1.5s,
+          height 1.5s,
+          background-color 1.5s,
+          border-radius 2s,
           transform 2s;
       }
 
-      div:hover {
-        width: 300px;
-        height: 300px;
+      #div1:hover { 
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
         background-color: orange;
-        transform: rotate(180deg);
+        transform: translate(50%, 50%) rotate(1080deg);
+      }
+      #div2 {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        background-color: red;
+        transition: transform 2s;
+      }
+      #div2:hover {
+        transform: skew(55deg) translate(50vw, 50vh) rotate(1080deg);
       }
     </style>
   </head>
   <body>
-    <div>TEXT</div>
+    <div id="div1">TEXT</div> <br>
+    <div id="div2">TEXT</div>
   </body>
 </html>
