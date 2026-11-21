@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes Text {
+        0% {background-color: pink;}
+        25% {background-color: plum;}
+        50% {tbackground-color: #d87093;}
+        75% {background-color: blueviolet;}
+        100% {background-color: purple; transform: rotate(1080deg)}
+      }
+      @keyframes Disc1 {
+        0% {background-color: lightblue;}
+        50% {background-color: lightgoldenrodyellow; transform: skew(55deg) translate(40vw, 80vh) rotate(1080deg)}
+      }
+      @keyframes Disc2 {
+        0% {background-color: lightblue;}
+        50% {background-color: lightgoldenrodyellow; transform: skew(-55deg) translate(-40vw, 80vh) rotate(1080deg)}
+      }
+      @keyframes Disc3 {
+        0% {background-color: lightblue;}
+        50% {background-color: lightgoldenrodyellow; transform: skew(55deg) translate(40vw, -80vh) rotate(1080deg)}
+      }
+      @keyframes Disc4 {
+        0% {background-color: lightblue;}
+        50% {background-color: lightgoldenrodyellow; transform: skew(-55deg) translate(-40vw, -80vh) rotate(1080deg)}
+      }
+      body {
+        background-color: aliceblue;
+      }
+      #div1 {
+        width: 0px;
+        height: 0px;
+        top: 44%;
+        left: 45%;
+        display: flex;
+        position: absolute;
+        border-radius: 50%;
+        transition: 2s;
+        justify-content: center;
+        background-color: lightblue;
+        animation-name: Text;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      #div2 {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
+        background-color: lightblue;
+        transition: transform 2s;
+        transition-timing-function: ease-in;
+        animation-name: Disc1;
+        animation-duration: 3s;
+      }
+      #div3 {
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        right: 0px;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        border-radius: 50%;
+        background-color: lightblue;
+        transition: transform 2s;
+        animation-name: Disc2;
+        animation-duration: 3s;
+      }
+      #div4 {
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+        position: absolute;
+        border-radius: 50%;
+        background-color: lightblue;
+        transition: transform 2s;
+        animation-name: Disc3;
+        animation-duration: 3s;
+      }
+      #div5 {
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+        position: absolute;
+        border-radius: 50%;
+        background-color: lightblue;
+        transition: transform 2s;
+        animation-name: Disc4;
+        animation-duration: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div2">DISC</div>
+    <div id="div3">DISC</div>
+     <div id="div4">DISC</div>
+      <div id="div5">DISC</div>
+    <div id="div1"><h1>TEXT</h1></div>
+    
+  </body>
+</html>
